@@ -1,0 +1,17 @@
+NAME       
+       du - estimate file space usage
+SYNOPSIS        
+       du [OPTION]... [FILE]...
+       du [OPTION]... --files0-from=F
+DESCRIPTION         top
+       Summarize device usage of the set of FILEs, recursively for
+       directories.
+
+       Mandatory arguments to long options are mandatory for short
+       options too.
+-a
+              write counts for all files, not just directories
+-c
+              produce a grand total
+-h
+              print sizes in human readable format (e.g., 1K 234M 2G)

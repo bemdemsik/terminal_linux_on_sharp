@@ -1,0 +1,28 @@
+NAME date
+       date - print or set the system date and time
+
+SYNOPSIS date
+       date [OPTION]... [+FORMAT]
+       date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
+
+DESCRIPTION date
+       Display date and time in the given FORMAT.  With -s, or with
+       [MMDDhhmm[[CC]YY][.ss]], set the date and time.
+
+       Mandatory arguments to long options are mandatory for short
+       options too.
+
+       -s STRING
+              set time described by STRING
+
+       -h
+              help in using the command
+
+       -f DATEFILE
+              sets the date format
+       
+	FORMAT controls the output.  Interpreted sequences are:
+		%Y - replaced by the current year
+		%m - replaced by the current a month
+		%u - replaced by the current day of the week
+		%d - replaced by the current in the daytime

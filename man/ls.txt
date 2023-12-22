@@ -1,0 +1,25 @@
+NAME
+	ls - list directory content
+SYNOPSIS
+	ls [OPTIONS]... [FILE]...
+DESCRIPTION
+	List information about the FILEs (the current directory by default).
+	Automatic sorting of files alphabetically.
+
+	Mandatory arguments for short options:
+
+	none
+		list all fiels and directories in the current directory
+
+	-d
+		display only directories in the current directory
+
+	-r
+		list all fiels and directories in the current directory in reverse alphabetical order
+
+	--hide
+		list all fiels and directories in the current directory, do not show files starting with the entered character
+
+	-m     
+		fill width with a comma separated list of entries
+

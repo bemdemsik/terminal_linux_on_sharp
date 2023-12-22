@@ -1,0 +1,18 @@
+NAME
+	mkpasswd - Overfeatured front end to crypt(3)
+
+SYNOPSIS
+	mkpasswd PASSWORD [SALT]
+
+DESCRIPTION
+	mkpasswd encrypts the given password with the crypt(3) libc function, using the given salt.
+
+	-S
+		Use the STRING as salt. If it begins with $ then it will be passed straight to crypt(3) without any checks.
+
+	-m
+		Compute the password using the TYPE method. If TYPE help then the list of available methods is printed. 
+		If TYPE begins and end with $ characters then the string is passed to crypt_gensalt(3) as-is.
+
+	-h
+		help in using the command

@@ -1,0 +1,28 @@
+NAME         
+       hexdump - display file contents in hexadecimal, decimal, octal,
+       or ascii
+
+       hexdump options file ...
+
+DESCRIPTION         
+       The hexdump utility is a filter which displays the specified
+       files, or standard input if no files are specified, in a
+       user-specified format.
+-C
+           Canonical hex+ASCII display. Display the input offset in
+           hexadecimal, followed by sixteen space-separated, two-column,
+           hexadecimal bytes, followed by the same sixteen bytes in %_p
+           format enclosed in | characters. Invoking the program as hd
+           implies this option.
+-d
+           Two-byte decimal display. Display the input offset in
+           hexadecimal, followed by eight space-separated, five-column,
+           zero-filled, two-byte units of input data, in unsigned
+           decimal, per line.
+-b
+           One-byte octal display. Display the input offset in
+           hexadecimal, followed by sixteen space-separated,
+           three-column, zero-filled bytes of input data, in octal, per
+           line.
+-h, --help
+           Display help text and exit.

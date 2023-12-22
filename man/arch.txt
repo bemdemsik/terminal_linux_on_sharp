@@ -1,0 +1,7 @@
+NAME
+       arch - print machine hardware name (same as uname -m)
+SYNOPSIS         top
+       arch [OPTION]...
+DESCRIPTION
+       Print machine architecture.
+--help, h display this help and exit

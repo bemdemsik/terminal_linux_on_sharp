@@ -1,0 +1,6 @@
+NAME
+	clear - clear the terminal screen
+SYNOPSIS
+	clear
+DESCRIPTION
+	clear the terminal screen

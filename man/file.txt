@@ -1,0 +1,37 @@
+NAME        
+     file — determine file type
+SYNOPSIS       
+     file [-bcdEhiklLNnprsSvzZ0] [--apple] [--exclude-quiet]
+          [--extension] [--mime-encoding] [--mime-type] [-e testname]
+          [-F separator] [-f namefile] [-m magicfiles] [-P name=value]
+          file ...
+     file -C [-m magicfiles]
+     file [--help]
+DESCRIPTION        
+     This manual page documents version 5.43 of the file command.
+
+     file tests each argument in an attempt to classify it.  There are
+     three sets of tests, performed in this order: filesystem tests,
+     magic tests, and language tests.  The first test that succeeds
+     causes the file type to be printed.
+-b
+             Do not prepend filenames to output lines (brief mode).
+-f
+             Read the names of the files to be examined from namefile
+             (one per line) before the argument list.  Either namefile
+             or at least one filename argument must be present; to test
+             the standard input, use ‘-’ as a filename argument.  Please
+             note that namefile is unwrapped and the enclosed filenames
+             are processed when this option is encountered and before
+             any further options processing is done.  This allows one to
+             process multiple lists of files with different command line
+             arguments on the same file invocation.  Thus if you want to
+             set the delimiter, you need to do it before you specify the
+             list of files, like: “-F @ -f namefile”, instead of: “-f
+             namefile -F @”.
+-k
+             Don't stop at the first match, keep going.  Subsequent
+             matches will be have the string ‘\012- ’ prepended.  (If
+             you want a newline, see the -r option.)  The magic pattern
+             with the highest strength (see the -l option) comes first.
+--help, -h  Print a help message and exit.

@@ -1,0 +1,14 @@
+NAME
+       groups - print the groups a user is in
+SYNOPSIS
+       groups [OPTION]... [USERNAME]...
+DESCRIPTION
+       Print group memberships for each USERNAME or, if no USERNAME is
+       specified, for the current process (which may differ if the
+       groups database has changed).
+
+       -h 
+		display this help and exit
+
+       -v
+		output version information and exit

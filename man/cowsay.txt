@@ -1,0 +1,19 @@
+NAME
+       cowsay - displaying a message with a drawing of a cow
+SYNOPSIS         top
+       cowsay [OPTION] [MESSAGE]
+Description
+	Cowsay generates an ASCII picture of a cow saying something 
+	provided by the user. 
+	If run with no arguments, it accepts standard input, word-wraps 
+	the message given 
+	at about 40 columns, and prints the cow saying the given message on standard output.
+-r 	
+	robot drawing
+-p 	
+	draw a paranoid cow
+-g 	
+	draw a greedy cow
+-h, --help
+	help
+	

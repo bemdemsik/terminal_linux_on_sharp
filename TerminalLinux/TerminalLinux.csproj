@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E8237B0-AD3B-4001-9D7B-65915C0FCE1B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TerminalLinux</RootNamespace>
+    <AssemblyName>TerminalLinux</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="basename.cs" />
+    <Compile Include="ChangeDirectory.cs" />
+    <Compile Include="Diff.cs" />
+    <Compile Include="Env.cs" />
+    <Compile Include="EnviromentVariables.cs" />
+    <Compile Include="dirname.cs" />
+    <Compile Include="Cowsay.cs" />
+    <Compile Include="Expand.cs" />
+    <Compile Include="Factor.cs" />
+    <Compile Include="FileCommand.cs" />
+    <Compile Include="fortune.cs" />
+    <Compile Include="Grep.cs" />
+    <Compile Include="Groups.cs" />
+    <Compile Include="Man.cs" />
+    <Compile Include="Clear.cs" />
+    <Compile Include="CommandLebedev.cs" />
+    <Compile Include="ConsoleDesign.cs" />
+    <Compile Include="Copy.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="DiskFree.cs" />
+    <Compile Include="echo.cs" />
+    <Compile Include="Exit.cs" />
+    <Compile Include="Hexdump.cs" />
+    <Compile Include="Mkpasswd.cs" />
+    <Compile Include="Move.cs" />
+    <Compile Include="PrintWorkingDirectory.cs" />
+    <Compile Include="find.cs" />
+    <Compile Include="mkdir.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pwgen.cs" />
+    <Compile Include="Reboot.cs" />
+    <Compile Include="rename.cs" />
+    <Compile Include="rmdir.cs" />
+    <Compile Include="Shutdown.cs" />
+    <Compile Include="Tail.cs" />
+    <Compile Include="touch.cs" />
+    <Compile Include="Uname.cs" />
+    <Compile Include="Cat.cs" />
+    <Compile Include="Architecture.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Head.cs" />
+    <Compile Include="DiskUsage.cs" />
+    <Compile Include="Kill.cs" />
+    <Compile Include="List.cs" />
+    <Compile Include="Processes.cs" />
+    <Compile Include="Remove.cs" />
+    <Compile Include="Unzip.cs" />
+    <Compile Include="Uptime.cs" />
+    <Compile Include="Uniq.cs" />
+    <Compile Include="wc.cs" />
+    <Compile Include="history.cs" />
+    <Compile Include="Wget.cs" />
+    <Compile Include="WhereIs.cs" />
+    <Compile Include="Whoami.cs" />
+    <Compile Include="Zip.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

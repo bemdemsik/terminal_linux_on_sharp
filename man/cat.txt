@@ -1,0 +1,20 @@
+NAME
+	cat - concatenate files and print on the standard output
+SYNOPSIS
+	cat [OPTIONS]... [FILE]...
+DESCRIPTION
+	Concatenate FILE(s) to standard output.
+
+	Mandatory arguments for short options:
+
+	none
+		Outputs the entire contents of a text file
+
+	-n
+		number all output lines
+
+	-b
+		number nonempty output lines
+
+	-E
+		display $ at end of each line

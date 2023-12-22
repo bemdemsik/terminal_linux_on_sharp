@@ -1,0 +1,17 @@
+NAME
+	mkdir - make directories
+SYNOPSIS
+	mkdir [OPTIONS]... [DIRECTORY_NAMEs]...
+DESCRIPTION
+	Create the DIRECTORY(ies).
+
+	Mandatory arguments for short options:
+
+	[directory_name]
+		сreates a new directory or directories in the current directory
+
+	-p [directory name]
+		creates a directory and its parent folders sequentially in current directory
+
+	-v [directory_name]
+		when creating a new directory (directories), displays a message about its creation

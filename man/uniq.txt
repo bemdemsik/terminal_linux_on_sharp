@@ -1,0 +1,30 @@
+NAME
+       uniq - report or omit repeated lines
+
+SYNOPSIS
+       uniq [OPTION]... [INPUT [OUTPUT]]
+
+DESCRIPTION
+       Filter adjacent matching lines from INPUT (or standard input),
+       writing to OUTPUT (or standard output).
+
+       With no options, matching lines are merged to the first
+       occurrence.
+
+       Mandatory arguments to long options are mandatory for short
+       options too.
+
+       -d, --repeated
+		only print duplicate lines, one for each group
+
+       -D     
+		print all duplicate lines
+
+       -u, --unique
+		only print unique lines
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       -h 
+		display this help and exit

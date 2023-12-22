@@ -1,0 +1,6 @@
+NAME
+	exit - cause normal process termination
+SYNOPSIS
+	exit
+DESCRIPTION
+	Shuts down the consolecurrent directory

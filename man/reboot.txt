@@ -1,0 +1,34 @@
+NAME         
+       reboot - reboot or enable/disable Ctrl-Alt-Del
+SYNOPSIS         
+       /* Since kernel version 2.1.30 there are symbolic names LINUX_REBOOT_*
+          for the constants and a fourth argument to the call: */
+
+       #include <linux/reboot.h>  /* Definition of LINUX_REBOOT_* constants */
+       #include <sys/syscall.h>   /* Definition of SYS_* constants */
+       #include <unistd.h>
+
+       int syscall(SYS_reboot, int magic, int magic2, int cmd, void *arg);
+
+       /* Under glibc and most alternative libc's (including uclibc, dietlibc,
+          musl and a few others), some of the constants involved have gotten
+          symbolic names RB_*, and the library call is a 1-argument
+          wrapper around the system call: */
+
+       #include <sys/reboot.h>    /* Definition of RB_* constants */
+       #include <unistd.h>
+
+       int reboot(int cmd);
+DESCRIPTION        
+       The reboot() call reboots the system, or enables/disables the
+       reboot keystroke (abbreviated CAD, since the default is Ctrl-Alt-
+       Delete; it can be changed using loadkeys(1)).
+
+       This system call fails (with the error EINVAL) unless magic
+       equals LINUX_REBOOT_MAGIC1 (that is, 0xfee1dead) and magic2
+       equals LINUX_REBOOT_MAGIC2 (that is, 672274793).  However, since
+       2.1.17 also LINUX_REBOOT_MAGIC2A (that is, 85072278) and since
+       2.1.97 also LINUX_REBOOT_MAGIC2B (that is, 369367448) and since
+       2.5.71 also LINUX_REBOOT_MAGIC2C (that is, 537993216) are
+       permitted as values for magic2.  (The hexadecimal values of these
+       constants are meaningful.)

@@ -1,0 +1,11 @@
+NAME
+	rmdir - remove directories
+SYNOPSIS
+	rmdir [OPTIONS]... [DIRECTORY_NAMEs]...
+DESCRIPTION
+	Remove the DIRECTORY(ies).
+
+	Mandatory arguments for short options:
+
+	[directory_name]
+		removes a directory if it is empty

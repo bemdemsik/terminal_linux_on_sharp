@@ -1,0 +1,31 @@
+NAME
+	rm - remove files in directory or files along with a directory
+
+SYNOPSIS
+	rm [OPTIONS]... [DIRECTORY_NAMEs]...
+
+DESCRIPTION
+	removes each specified file.  By default, it does not remove directories.
+
+	Mandatory arguments for short options:
+
+	none
+		deleting a file from the current directory
+
+	*
+		delete all files and directory from the current directory
+
+	-f
+		the message will not be displayed when deleting
+
+	-r
+		deleting a directory along with the files inside it
+
+	-d
+		deleting empty directories in the current directory
+
+	-v
+		displays the names of deleted files
+
+	-h
+		help in using the command

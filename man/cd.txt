@@ -1,0 +1,18 @@
+NAME
+	cd - change the working directory
+SYNOPSIS
+	cd [DIRECTORY_NAME]...
+DESCRIPTION
+	Utility shall change the working directory of the current shell execution environment.
+
+	Mandatory arguments for short options:
+
+	none, ~
+		switching to the disk of the current directory
+
+	[directory name]
+		changing to a directory in the current directory
+
+	[disk_name\\....\\directory_name]
+		navigate to the directory at the selected location
+                        

@@ -1,0 +1,21 @@
+NAME         
+       shutdown - shut down part of a full-duplex connection
+SYNOPSIS         
+       #include <sys/socket.h>
+
+       int shutdown(int sockfd, int how);
+DESCRIPTION         
+       The shutdown() call causes all or part of a full-duplex
+       connection on the socket associated with sockfd to be shut down.
+       If how is SHUT_RD, further receptions will be disallowed.  If how
+       is SHUT_WR, further transmissions will be disallowed.  If how is
+       SHUT_RDWR, further receptions and transmissions will be
+       disallowed.
+-t
+	time
+-f
+	force close services
+-r
+	reboot
+-s
+	shutdown
